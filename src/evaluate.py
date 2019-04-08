@@ -115,7 +115,7 @@ def evaluate(encoder, decoder, voc, sentence, beam_size, max_length=MAX_LENGTH):
     indexes_batch = [indexesFromSentence(voc, sentence)] #[1, seq_len]
     lengths = [len(indexes) for indexes in indexes_batch]
     input_batch = torch.LongTensor(indexes_batch).transpose(0, 1)
-    #input_batch = input_batch.to(device)
+    input_batch = input_batch.to(device)
 
     encoder_outputs, encoder_hidden = encoder(input_batch, lengths, None)
 
@@ -195,9 +195,9 @@ def runTest(n_layers, hidden_size, modelFile, beam_size, corpus):
     print(decoder)
     encoder.train(False)
     decoder.train(False)
-    # 放到GPU上
-    #encoder = encoder.to(device)
-    #decoder = decoder.to(device)    
+    # 放到GPU
+    encoder = encoder.to(device)
+    decoder = decoder.to(device)    
     torch.set_grad_enabled(False)
     
     evaluateInput(encoder, decoder, voc, beam_size)
