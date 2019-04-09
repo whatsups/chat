@@ -20,6 +20,12 @@ You are welcome.
 ```
 一些公开语料：[[语料]](https://github.com/rkadlec/ubuntu-ranking-dataset-creator)
 
+## 预处理
+- 删除过长句子
+- 删除包括低频词汇的句子
+- 句子小写，标点分离
+- 生成字典，训练语句对
+
 ## 模型
 基于sequence to sequence模型，项目分别实现了LSTM和GRU的模型构建，并实现了注意力机制。通过```main_train.py```指定相关参数选择使用LSTM或GRU，以及是否使用注意力机制。
 本项目中训练的模型结构如下所示：
