@@ -22,6 +22,15 @@ You are welcome.
 
 ## 模型
 基于sequence to sequence模型，项目分别实现了LSTM和GRU的模型构建，并实现了注意力机制。通过```main_train.py```指定相关参数选择使用LSTM或GRU，以及是否使用注意力机制。
+本项目中训练的模型结构如下所示：
+
+- Encoder采用4层双向LSTM，Decoder采用4层LSTM
+- 采用注意力机制
+- 隐藏层维度为512
+- batch_size = 128
+- 学习率初始为0.001，训练过程中衰减至0.0001
+- 采用Adam梯度下降
+- 损失函数采用交叉熵损失(cross-entropy loss)
 
 ## 训练
 执行```python main_train.py```以训练模型。相关参数解释如下：
