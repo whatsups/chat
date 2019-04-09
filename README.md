@@ -23,7 +23,7 @@ You are welcome.
 ## 模型
 基于sequence to sequence模型，项目分别实现了LSTM和GRU的模型构建，并实现了注意力机制。通过```main_train.py```指定相关参数选择使用LSTM或GRU，以及是否使用注意力机制。
 本项目中训练的模型结构如下所示：
-
+![model](https://github.com/duyeouc/chat/blob/master/img/model.jpg)
 - Encoder采用4层双向LSTM，Decoder采用4层LSTM
 - 采用注意力机制
 - 隐藏层维度为512
