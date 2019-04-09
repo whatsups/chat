@@ -59,3 +59,11 @@ You are welcome.
 
 ## 测试
 执行```python main_test.py```执行测试。指定模型路径后，即可进行对话。'q'终止。
+
+## 参考
+- [Sequence to Sequence Learning with Neural Networks
+](http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks)
+- [pytorch-seq2seq基础篇](https://fgc.stpi.narl.org.tw/activity/videoDetail/4b1141305df38a7c015e194f22f8015b)
+- [吴恩达DeepLearning课程-squence models](https://www.coursera.org/learn/nlp-sequence-models)
+- [pytorch-Docs](https://pytorch.org/docs/)
+- [pytorch-LSTM](https://www.cnblogs.com/duye/p/9913386.html)
