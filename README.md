@@ -1,6 +1,6 @@
 # chat
 **这是一个基于seq2seq模型的聊天系统，使用LSTM/GRU+注意力机制。使用开源框架pytorch。**
-项目过程中的学习记录见[record.pdf](./record.pdf)。
+项目过程中的学习记录见[record.pdf](record.pdf)。
 
 ## 环境
 - python 3.6
