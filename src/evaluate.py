@@ -17,6 +17,9 @@ indexesFromSentence = sentence2index
 USE_CUDA = torch.cuda.is_available()
 device = torch.device("cuda" if USE_CUDA else "cpu")
 
+"""
+    部分代码来自：https://github.com/ywk991112/pytorch-chatbot/blob/master/evaluate.py
+"""
 class Sentence:
     def __init__(self, decoder_hidden, last_idx=SOS_token, sentence_idxes=[], sentence_scores=[]):
         if(len(sentence_idxes) != len(sentence_scores)):
