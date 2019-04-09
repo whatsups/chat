@@ -58,4 +58,4 @@ You are welcome.
 
 
 ## 测试
-```evaluate.py```执行测试。
+执行```python main_test.py```执行测试。指定模型路径后，即可进行对话。'q'终止。
